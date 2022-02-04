@@ -84,7 +84,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   mobile first custom styles
    ========================================================================== */
     header{
       display: flex;
@@ -111,7 +111,6 @@ textarea {
     header nav a {
       text-decoration: none;
     }
-
     main{
       display: flex;
       justify-content: center;
@@ -218,16 +217,64 @@ textarea {
 
    @media only screen and (min-width: 768px) {
     /*Tablet styles here*/
-    main{
-      display: flex;
+    header{
       flex-direction: row;
-      align-items: center;
+    }
+    header a{
+      justify-content: flex-start;
+      padding-left: 30px;
+    }
+    .unplug-img {
+      width: 30%;
+    }
+    header nav li {
+      list-style: none;
+      display: inline-flex;
+    }
+    main{
+      justify-content: space-around;
+      flex-flow: row wrap;
+     } 
+    aside, form {
+      width: 46%;
+      height: 115px;
+    }
+    .feat{
+      display: flex;
+      flex-flow: row wrap;
       justify-content: center;
-      flex-wrap: wrap;
-    } 
-   /* p.feat-item-descr {
-     width: 50%;
-   } */
+    }
+    .feat article {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 30px 100px 30px 100px;
+    }
+    .reviews {
+      display: flex;
+      justify-content: flex-end;
+      flex-flow: row wrap;
+    }
+    .reviews article{
+      width: 50%;
+      box-sizing: border-box;
+      padding: 30px; 
+    }
+    .lacrue-image {
+      width: 350px;
+      height: 210px;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      flex-flow: row wrap;
+  }
+  .contact, .social{
+      width: 50%;
+      box-sizing: border-box;
+      padding: 30px; 
+  }
      
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
