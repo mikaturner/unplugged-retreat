@@ -91,14 +91,18 @@ textarea {
    }
    body {
       font-family: 'Open Sans', sans-serif;
+      color: #e2e3ed;
       font-size: 1em;
     } 
     a, h3 {
       font-size: 1.125em;
     }
-    a {
+    a{
+      color: #e2e3ed;
       font-style: bold;
+      text-decoration: none;
     }
+
     h1, h2, h3, h4 {
       font-family: 'Poppins', sans-serif;
     }
@@ -144,6 +148,9 @@ textarea {
       margin: 0 10px;
       text-align: center;
      } 
+    address {
+      font-style: normal;
+    }
 
   footer {
     display: flex;
