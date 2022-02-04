@@ -86,7 +86,32 @@ textarea {
 /* ==========================================================================
    mobile first custom styles
    ========================================================================== */
-    header{
+    html {
+      font-size: 16px;
+   }
+   body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+    } 
+    a, h3 {
+      font-size: 1.125em;
+    }
+    a {
+      font-style: bold;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1 {
+      font-size: 2.25em;
+    }
+    h2{
+      font-size: 1.875em;
+    }
+    p{
+      font-size: 0.875em;
+    }
+   header{
       display: flex;
       flex-direction: column;
     }
@@ -255,15 +280,15 @@ textarea {
       justify-content: flex-end;
       flex-flow: row wrap;
     }
-    .mission, .faq {
+    .mission, .faq, .contact-det {
       display: flex;
       justify-content: space-around;
       flex-flow: row wrap;
     }
-    .faq h1{
+    .faq h2{
       width: 100%;
     }
-    .reviews article, .mission p, .faq article{
+    .reviews article, .mission p, .faq article, .contact-det article{
       width: 50%;
       box-sizing: border-box;
       padding: 30px; 
@@ -299,12 +324,12 @@ textarea {
     .hero-area {
       display: flex;
     }
-    .hero-area h1,  .feat h1 {
+    .hero-area h2,  .feat h2 {
       display: flex;
       width: 1200px;
       justify-content: center;
     }
-   .reviews h1 {
+   .reviews h2 {
       display: flex;
       flex: 1 1 100%;
       justify-content: flex-start;
