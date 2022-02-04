@@ -114,6 +114,7 @@ textarea {
     }
     p{
       font-size: 0.875em;
+      line-height: 1.125em;
     }
    header{
       display: flex;
@@ -150,6 +151,7 @@ textarea {
      } 
     address {
       font-style: normal;
+      line-height: 0em;
     }
 
   footer {
@@ -331,7 +333,7 @@ textarea {
     .hero-area {
       display: flex;
     }
-    .hero-area h2,  .feat h2 {
+    .hero-area h2,  .feat h2, .contact-det h2 {
       display: flex;
       width: 1200px;
       justify-content: center;
