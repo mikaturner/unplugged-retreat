@@ -125,6 +125,7 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
   
 /* ==========================================================================
@@ -254,7 +255,15 @@ textarea {
       justify-content: flex-end;
       flex-flow: row wrap;
     }
-    .reviews article{
+    .mission, .faq {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+    }
+    .faq h1{
+      width: 100%;
+    }
+    .reviews article, .mission p, .faq article{
       width: 50%;
       box-sizing: border-box;
       padding: 30px; 
@@ -275,7 +284,7 @@ textarea {
       box-sizing: border-box;
       padding: 30px; 
   }
-     
+   }     
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
     }
