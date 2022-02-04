@@ -287,6 +287,29 @@ textarea {
    }     
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+    header a{
+      padding-left: 110px;
+    }
+
+    .feat article {
+      width: 33%;
+      box-sizing: border-box;
+      padding: 30px 100px 30px 100px;
+    }
+    .hero-area {
+      display: flex;
+    }
+    .hero-area h1,  .feat h1 {
+      display: flex;
+      width: 1200px;
+      justify-content: center;
+    }
+   .reviews h1 {
+      display: flex;
+      flex: 1 1 100%;
+      justify-content: flex-start;
+      padding-left: 110px;
+    }
     }
 
 
