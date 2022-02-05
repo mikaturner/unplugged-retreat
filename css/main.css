@@ -116,9 +116,13 @@ textarea {
       font-size: 0.875em;
       line-height: 1.125em;
     }
-   header{
+   header, footer{
       display: flex;
       flex-direction: column;
+      background-color:#1F2321 ;
+    }
+    header{
+      padding-top: 10px;
     }
     header a{
       display: flex;
@@ -146,20 +150,34 @@ textarea {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 0 10px;
+      margin: 0;
       text-align: center;
+     }
+     .form-blurb {
+       margin: 0 10px;
      } 
+     aside{
+       background-color: #527057;
+     }
+     .reviews, .contact-det{
+       background-color: #294139;
+     }
+     .mission, .faq{
+       background-color: #517157;
+     }
     address {
       font-style: normal;
       line-height: 0em;
     }
 
   footer {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+    padding-top: 30px;
+}
+.copyright{
+  color: #517157;
 }
   
 /* ==========================================================================
@@ -243,7 +261,32 @@ textarea {
 .clearfix::after {
   clear: both;
 }
-
+/*=================Form==============================================*/
+ form{
+  margin: 30px 10px 30px 10px; 
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -269,10 +312,21 @@ textarea {
     main{
       justify-content: space-around;
       flex-flow: row wrap;
-     } 
-    aside, form {
+     }
+     form{
+       margin-top: 0px;
+     }
+    .form-descr{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    } 
+    .form-blurb, form {
       width: 46%;
-      height: 115px;
+      box-sizing: border-box;
+      padding: 30px;
+      
     }
     .feat{
       display: flex;
@@ -286,7 +340,7 @@ textarea {
     }
     .reviews {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       flex-flow: row wrap;
     }
     .mission, .faq, .contact-det {
@@ -302,10 +356,6 @@ textarea {
       box-sizing: border-box;
       padding: 30px; 
     }
-    .lacrue-image {
-      width: 350px;
-      height: 210px;
-    }
     footer {
       display: flex;
       justify-content: center;
@@ -318,13 +368,16 @@ textarea {
       box-sizing: border-box;
       padding: 30px; 
   }
-   }     
+}
+  /*========================Desktop Styles ===================*/   
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
     header a{
       padding-left: 110px;
     }
-
+    .form-descr{
+      width: 100%;
+    }
     .feat article {
       width: 33%;
       box-sizing: border-box;
@@ -344,8 +397,8 @@ textarea {
       justify-content: flex-start;
       padding-left: 110px;
     }
-    }
-
+  
+  }
 
 /* ==========================================================================
    Print styles.
