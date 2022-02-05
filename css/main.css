@@ -111,10 +111,19 @@ textarea {
     }
     h2{
       font-size: 1.875em;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     p{
       font-size: 0.875em;
       line-height: 1.125em;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    figure{
+      margin: 0;
     }
    header, footer{
       display: flex;
@@ -168,6 +177,35 @@ textarea {
     address {
       font-style: normal;
       line-height: 0em;
+    }
+    figure{
+      margin: 30px;
+    }
+    .hero-area{
+      background: url('../img/jake-melara-30679-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 500px;
+      width: 100%;
+
+    }
+    .feat {
+      background: url('../img/rawpixel-800820-unsplash1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 1450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .feat article {
+      width: 55%;
+      box-sizing: border-box;
+      padding: 30px 50px 30px 50px;
     }
 
   footer {
@@ -340,9 +378,21 @@ input[type=button] {
     }
     .reviews {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
       flex-flow: row wrap;
     }
+    .reviews img, .reviews article {
+      width: 50%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
+      padding: 0px 50px 100px 50px;
+      box-sizing: border-box;
+    }
+
     .mission, .faq, .contact-det {
       display: flex;
       justify-content: space-around;
@@ -351,8 +401,8 @@ input[type=button] {
     .faq h2{
       width: 100%;
     }
-    .reviews article, .mission p, .faq article, .contact-det article{
-      width: 50%;
+   .mission p, .faq article, .contact-det article{
+      width: 45%;
       box-sizing: border-box;
       padding: 30px; 
     }
@@ -375,6 +425,9 @@ input[type=button] {
     header a{
       padding-left: 110px;
     }
+    h1 {
+      margin-left: 110px;
+    }
     .form-descr{
       width: 100%;
     }
@@ -395,9 +448,8 @@ input[type=button] {
       display: flex;
       flex: 1 1 100%;
       justify-content: flex-start;
-      padding-left: 110px;
+      padding-left: 50px;
     }
-  
   }
 
 /* ==========================================================================
