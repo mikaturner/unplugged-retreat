@@ -115,9 +115,12 @@ textarea {
       padding-right: 10px;
     }
     .features i {
-	font-size: 3.75em;
-        margin-bottom: 40px;
-}
+	    font-size: 3.75em;
+      margin-bottom: 40px;
+    }
+    .social-icons i {
+      font-size: 1.125em;
+    }
     p{
       font-size: 0.875em;
       line-height: 1.125em;
@@ -234,6 +237,10 @@ textarea {
     text-align: center;
     padding-top: 30px;
 }
+.social-icons p{
+  display: inline-flex;
+  padding: 20px 40px;
+} 
 .copyright{
   color: #517157;
 }
