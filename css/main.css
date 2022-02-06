@@ -114,6 +114,9 @@ textarea {
       font-size: 1.875em;
       padding-left: 20px;
     }
+    h3{
+      line-height: 1.25em;
+    }
     
     .f-awe-icon i {
 	    font-size: 3.75em;
@@ -137,12 +140,9 @@ textarea {
       line-height: 1.125em;
     }
     img {
-      width: 100%;
+      width: 89%;
       height: auto;
     }
-    /*figure{
-      margin: 0;
-    } */
     .map{
       width: 125%;
     }
@@ -207,6 +207,16 @@ textarea {
      .reviews, .contact-det{
        background-color: #294139;
      }
+     .reviews {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      padding-bottom: 45px;
+    }
+    .reviews article {
+      width: 89%;
+    }
      .mission, .faq{
        background-color: #517157;
      }
@@ -235,12 +245,13 @@ textarea {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 70px;
     }
 
     .feat article {
       width: 46%;
       box-sizing: border-box;
-      padding: 30px 0px;
+      padding: 30px 0px 10px 0px;
     }
 
     .feat h2 {
@@ -261,6 +272,10 @@ textarea {
   display: inline-flex;
   padding: 0px 20px;
 } 
+.social-icons h3{
+  padding-top: 40px;
+  line-height: 0px;
+}
 .copyright{
   color: #517157;
 }
