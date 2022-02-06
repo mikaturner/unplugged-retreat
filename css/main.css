@@ -120,6 +120,13 @@ textarea {
     }
     .social-icons i {
       font-size: 1.125em;
+      line-height: 2.5em;
+    }
+    .social-icons i {
+      background-color: #517157;
+      border-radius: 100%;
+      width: 2.5em;
+      height: 2.5em;
     }
     p{
       font-size: 0.875em;
@@ -239,7 +246,7 @@ textarea {
 }
 .social-icons p{
   display: inline-flex;
-  padding: 20px 40px;
+  padding: 0px 20px;
 } 
 .copyright{
   color: #517157;
