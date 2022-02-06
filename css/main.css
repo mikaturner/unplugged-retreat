@@ -122,13 +122,16 @@ textarea {
       width: 100%;
       height: auto;
     }
-    figure{
+    /*figure{
       margin: 0;
+    } */
+    .map{
+      width: 125%;
     }
     .map figure {
       width: 100%;
       height: 0; 
-      padding-bottom: 125%; 
+      padding-bottom: 95%; 
       overflow: hidden;
       position: relative;
     }
@@ -192,9 +195,9 @@ textarea {
       font-style: normal;
       line-height: 0em;
     }
-    figure{
+    /*figure{
       margin: 30px;
-    }
+    } */
     .hero-area{
       background: url('../img/jake-melara-30679-unsplash.jpg');
       background-size: cover;
@@ -432,6 +435,12 @@ input[type=button] {
       box-sizing: border-box;
       padding: 30px; 
   }
+  .map{
+    width: 170%;
+  }
+  .map figure {
+    padding-bottom: 52%; 
+  }
 }
   /*========================Desktop Styles ===================*/   
     @media only screen and (min-width: 1200px) {
@@ -463,6 +472,9 @@ input[type=button] {
       flex: 1 1 100%;
       justify-content: flex-start;
       padding-left: 50px;
+    }
+    .map figure {
+      padding-bottom: 38%; 
     }
   }
 
