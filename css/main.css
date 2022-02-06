@@ -114,6 +114,10 @@ textarea {
       padding-left: 10px;
       padding-right: 10px;
     }
+    .features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
+}
     p{
       font-size: 0.875em;
       line-height: 1.125em;
@@ -212,7 +216,6 @@ textarea {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 1450px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -384,9 +387,8 @@ input[type=button] {
       
     }
     .feat{
-      display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      padding: 100px 50px;
     }
     .feat article {
       width: 50%;
@@ -454,6 +456,10 @@ input[type=button] {
     .form-descr{
       width: 100%;
     }
+    .feat{
+      padding: 100px 210px;
+    }
+    
     .feat article {
       width: 33%;
       box-sizing: border-box;
