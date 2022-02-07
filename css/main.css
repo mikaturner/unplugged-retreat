@@ -397,17 +397,29 @@ input[type=button] {
     /*Tablet styles here*/
     header{
       flex-direction: row;
+      padding: 10px;
     }
     header a{
       justify-content: flex-start;
-      padding-left: 30px;
+      padding-left: 60px;
     }
     .unplug-img {
-      width: 30%;
+      width: 60%;
+      padding-top: 0px;
     }
     header nav li {
       list-style: none;
       display: inline-flex;
+    }
+
+    header nav ul {
+      padding: 0px 60px 0px 40px;
+    }
+    .hero-area {
+      padding-left: 60px;
+    }
+    .hero-area h1 {
+      width: 68%;
     }
     main{
       justify-content: space-around;
@@ -419,14 +431,19 @@ input[type=button] {
     .form-descr{
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around;
+      justify-content: justify-center;
       align-items: flex-start;
     } 
-    .form-blurb, form {
-      width: 46%;
+    .form-blurb {
+      width: 47%;
       box-sizing: border-box;
-      padding: 30px;
-      
+      padding: 30px 30px 30px 60px;
+      margin: 0 0px;
+      }
+    form {
+      width: 47%;
+      box-sizing: border-box;
+      padding: 30px 60px 30px 30px;
     }
     .feat{
       flex-flow: row wrap;
@@ -437,22 +454,38 @@ input[type=button] {
       box-sizing: border-box;
       padding: 30px 100px 30px 100px;
     }
-    .reviews {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-flow: row wrap;
+
+    .feat h2 {
+      padding-top: 0px;
     }
-    .reviews img, .reviews article {
+    .reviews {
+      justify-content: flex-start;
+    }
+    .reviews h2{
+      padding: 100px 0px 10px 60px;
+      line-height: 0;
+    }
+    .reviews img {
       width: 50%;
       height: auto;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       flex-flow: row wrap;
-      padding: 0px 50px 100px 50px;
+      padding: 0px 30px 100px 60px;
       box-sizing: border-box;
     }
+    .reviews article {
+      width: 50%;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0px 60px 100px 0px;
+      box-sizing: border-box;
+    }
+    .reviews h3 {
+      margin-top: 0px;
+    }
+  
 
     .mission, .faq, .contact-det {
       display: flex;
@@ -478,6 +511,9 @@ input[type=button] {
       width: 50%;
       box-sizing: border-box;
       padding: 30px; 
+  }
+  .social-icons h3{
+    padding-top: 0px;
   }
   .map{
     width: 170%;
