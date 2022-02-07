@@ -276,9 +276,6 @@ textarea {
   padding-top: 40px;
   line-height: 0px;
 }
-.copyright{
-  color: #517157;
-}
   
 /* ==========================================================================
    Helper classes
@@ -411,7 +408,6 @@ input[type=button] {
       list-style: none;
       display: inline-flex;
     }
-
     header nav ul {
       padding: 0px 60px 0px 40px;
     }
@@ -454,7 +450,6 @@ input[type=button] {
       box-sizing: border-box;
       padding: 30px 100px 30px 100px;
     }
-
     .feat h2 {
       padding-top: 0px;
     }
@@ -485,8 +480,6 @@ input[type=button] {
     .reviews h3 {
       margin-top: 0px;
     }
-  
-
     .mission, .faq, .contact-det {
       display: flex;
       justify-content: space-around;
@@ -526,39 +519,62 @@ input[type=button] {
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
     header a{
-      padding-left: 110px;
+      padding-left: 120px;
     }
-    h1 {
-      margin-left: 110px;
-    }
+    .hero-area h1 {
+      margin-top: 45px;
+      margin-left: 50px;
+      width: 40%;
+      }
     .form-descr{
       width: 100%;
     }
-    .feat{
-      padding: 100px 210px;
+    .form-blurb{
+      padding: 45px 80px 65px 200px;
     }
-    
+    form {
+      padding: 45px 200px 65px 80px;
+    }
+    .feat h2 {
+      width: 90%;
+    }
     .feat article {
       width: 33%;
       box-sizing: border-box;
-      padding: 30px 100px 30px 100px;
+      padding: 30px 80px 30px 80px;
     }
     .hero-area {
       display: flex;
     }
-    .hero-area h2,  .feat h2, .contact-det h2 {
+    .hero-area h2, .contact-det h2 {
       display: flex;
       width: 1200px;
       justify-content: center;
     }
+   .reviews {
+     padding-left: 120px;
+     align-items: flex-start;
+   }
    .reviews h2 {
       display: flex;
       flex: 1 1 100%;
-      justify-content: flex-start;
-      padding-left: 50px;
+      padding: 100px 0px 100px 60px;
+    }
+    .reviews article {
+      width: 40%;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0px 60px 100px 20px;
+      box-sizing: border-box;
     }
     .map figure {
       padding-bottom: 38%; 
+    }
+    footer {
+      padding-top: 100px;
+    }
+    .contact, .social {
+      padding-bottom: 100px;
     }
   }
 
