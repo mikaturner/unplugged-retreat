@@ -108,11 +108,9 @@ textarea {
     }
     h1 {
       font-size: 2.25em;
-      padding-left: 20px;
     }
     h2{
       font-size: 1.875em;
-      padding-left: 20px;
     }
     h3{
       line-height: 1.25em;
@@ -143,13 +141,11 @@ textarea {
       width: 89%;
       height: auto;
     }
-    .map{
-      width: 125%;
-    }
-    .map figure {
+
+    .map {
       width: 100%;
       height: 0; 
-      padding-bottom: 95%; 
+      padding-bottom: 125%; 
       overflow: hidden;
       position: relative;
     }
@@ -198,6 +194,9 @@ textarea {
       margin: 0;
       text-align: left;
      }
+     .hero-area h1 {
+       padding-left: 20px;
+     } 
      .form-blurb {
        margin: 0 20px;
      } 
@@ -214,12 +213,16 @@ textarea {
       flex-flow: row wrap;
       padding-bottom: 45px;
     }
-    .reviews article {
+    .reviews article, .reviews h2 {
       width: 89%;
     }
      .mission, .faq{
        background-color: #517157;
      }
+     .mission article, .contact-det {
+       padding: 20px 20px 45px 20px; 
+     }
+
     address {
       font-style: normal;
       line-height: 0em;
@@ -245,7 +248,7 @@ textarea {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-bottom: 70px;
+      padding: 0px 20px 70px 20px;
     }
 
     .feat article {
