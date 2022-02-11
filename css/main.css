@@ -86,7 +86,8 @@ textarea {
 /* ==========================================================================
    mobile first custom styles
    ========================================================================== */
-    html {
+   /*  ---------Global Stylings ------------*/ 
+   html {
       font-size: 16px;
    }
    body {
@@ -94,15 +95,14 @@ textarea {
       color: #e2e3ed;
       font-size: 1em;
     } 
-    a, h3 {
-      font-size: 1.125em;
-    }
     a{
       color: #e2e3ed;
       font-style: bold;
       text-decoration: none;
     }
-
+    a, h3 {
+      font-size: 1.125em;
+    }
     h1, h2, h3, h4 {
       font-family: 'Poppins', sans-serif;
     }
@@ -115,7 +115,11 @@ textarea {
     h3{
       line-height: 1.25em;
     }
-    
+    p{
+      font-size: 0.875em;
+      line-height: 1.125em;
+    }
+    /*----------- Icon Styling ---------------*/
     .f-awe-icon i {
 	    font-size: 3.75em;
       margin-bottom: 40px;
@@ -133,15 +137,11 @@ textarea {
       width: 2.5em;
       height: 2.5em;
     }
-    p{
-      font-size: 0.875em;
-      line-height: 1.125em;
-    }
+    /*---------- Embedded Image Styling -------------*/
     img {
       width: 89%;
-      height: auto;
     }
-
+    /*-----------Iframe Map Styling and CSS to make responsive------------*/
     .map {
       width: 100%;
       height: 0; 
@@ -156,6 +156,7 @@ textarea {
         top: 0; 
         left: 0; 
     }
+    /*--------------Header Styling, with some footer styling, more footer styling lower in document --------*/
    header, footer{
       display: flex;
       flex-direction: column;
@@ -186,17 +187,15 @@ textarea {
     header nav a {
       text-decoration: none;
     }
+    /*--------------Main Area Styling --------------------------*/
     main{
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
-      margin: 0;
-      text-align: left;
      }
      .hero-area h1 {
        padding-left: 20px;
      } 
+     /*-------------Itinerary Area-------------------------*/
      .form-blurb {
        margin: 0 20px;
      } 
@@ -206,6 +205,7 @@ textarea {
      .reviews, .contact-det{
        background-color: #294139;
      }
+     /*-----------Homepage Review Area Styling------------*/
      .reviews {
       display: flex;
       justify-content: center;
@@ -219,17 +219,16 @@ textarea {
      .mission, .faq{
        background-color: #517157;
      }
-     .mission article, .contact-det {
+     /*--------About-Page Mission and Contact Detail Area, and FAQ Page Styling-------------*/
+     .mission article, .contact-det, .faq {
        padding: 20px 20px 45px 20px; 
      }
-
+     /*---address styling, affects <address> elements in footer and in .contact-det section of About page---*/
     address {
       font-style: normal;
       line-height: 0em;
     }
-    /*figure{
-      margin: 30px;
-    } */
+    /*-----------------Homepage Hero Area Background Image and Styling --------------*/
     .hero-area{
       background: url('../img/jake-melara-30679-unsplash.jpg');
       background-size: cover;
@@ -239,6 +238,7 @@ textarea {
       width: 100%;
 
     }
+    /*----------------Camp Features Area and Background Image and Styling -------------*/
     .feat {
       background: url('../img/rawpixel-800820-unsplash1.jpg');
       background-size: cover;
@@ -264,7 +264,7 @@ textarea {
     .feat-item-descr {
       text-align: center;
     }
-
+/*------Footer Styling, footer background color is set in header section since they share the same color-------*/
   footer {
     justify-content: center;
     align-items: center;
@@ -361,7 +361,7 @@ textarea {
 .clearfix::after {
   clear: both;
 }
-/*=================Form==============================================*/
+/*=================Homepage Intineray Form==============================================*/
  form{
   margin: 30px 20px 30px 20px; 
 }
@@ -388,13 +388,12 @@ input[type=button] {
   text-transform: uppercase;
 }
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Tablet and Desktop
    ========================================================================== */
 
    @media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
+    /*-------Tablet styles here*--------------------------------------------------*/
+    /*-----------------Header area------------------*/
     header{
       flex-direction: row;
       padding: 10px;
@@ -407,31 +406,28 @@ input[type=button] {
       width: 60%;
       padding-top: 0px;
     }
-    header nav li {
-      list-style: none;
-      display: inline-flex;
-    }
     header nav ul {
       padding: 0px 60px 0px 40px;
     }
+    /*-------------Main area-----------------------------------------------------------*/
+  
+     /*-----------------Hero Area--------------------*/
     .hero-area {
       padding-left: 60px;
     }
+    /*--Set a percentage so text-wrap matches mockup --*/
     .hero-area h1 {
       width: 68%;
     }
-    main{
-      justify-content: space-around;
-      flex-flow: row wrap;
-     }
+    /*------Itinerary Area------------------------*/
      form{
        margin-top: 0px;
+       width: 47%;
+       box-sizing: border-box;
+       padding: 30px 60px 30px 30px;
      }
     .form-descr{
       display: flex;
-      flex-flow: row wrap;
-      justify-content: justify-center;
-      align-items: flex-start;
     } 
     .form-blurb {
       width: 47%;
@@ -439,23 +435,19 @@ input[type=button] {
       padding: 30px 30px 30px 60px;
       margin: 0 0px;
       }
-    form {
-      width: 47%;
-      box-sizing: border-box;
-      padding: 30px 60px 30px 30px;
-    }
+     /*--------Camp Features Area----------------*/ 
     .feat{
       flex-flow: row wrap;
       padding: 100px 50px;
     }
     .feat article {
       width: 50%;
-      box-sizing: border-box;
       padding: 30px 100px 30px 100px;
     }
     .feat h2 {
       padding-top: 0px;
     }
+    /*----------Reviews Section -------------------*/
     .reviews {
       justify-content: flex-start;
     }
@@ -465,90 +457,81 @@ input[type=button] {
     }
     .reviews img {
       width: 50%;
-      height: auto;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-flow: row wrap;
       padding: 0px 30px 100px 60px;
       box-sizing: border-box;
     }
     .reviews article {
       width: 50%;
-      display: flex;
-      flex-flow: row wrap;
-      padding: 0px 60px 100px 0px;
+      padding: 0px 60px 145px 0px;
       box-sizing: border-box;
     }
     .reviews h3 {
       margin-top: 0px;
     }
-    .mission, .faq {
-      display: flex;
-      justify-content: space-around;
-      flex-flow: row wrap;
+    /*--------- Start Checking HERE  About Page and Faq Page main sections-------------*/
+    
+    .mission h1{
+      width: 95%;
     }
-    .contact-det {
-      display: flex;
-      justify-content: flex-start;
-      flex-flow: row wrap;
-      padding: 64px 0px 120px 60px;
+    .contact-det h2{
+      width: 75%;
     }
-    .mission {
-      padding: 64px 0px 0px 60px;
-    }
-    .faq h2{
-      width: 100%;
-    }
-    .mission article {
+    .mission article, .contact-det, .faq {
       display: flex;
       justify-content: flex-start;
       flex-flow: row wrap;
+    } 
+    .mission article, .contact-det{
+      padding: 60px 60px 10px 70px;
     }
-    .faq article, .contact-det article{
-      width: 50%;
-      box-sizing: border-box;
+    .faq {
+      padding: 60px 60px 90px 70px;
     }
     .mission p {
       width: 50%;
       box-sizing: border-box;
       padding: 0px 60px 85px 0px;
-    }
-    footer {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: center;
-      flex-flow: row wrap;
-  }
-  .contact, .social{
+    } 
+    .contact-det article {
       width: 50%;
       box-sizing: border-box;
-      padding: 30px 30px 100px 30px; 
-  }
-  .contact-det h2 {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .social-icons h3{
-    padding-top: 0px;
-  }
-  .map {
-    width: 100%;
-    padding-bottom: 52%; 
-  }
-  footer{
-    padding-top: 100px;
-  }
-  footer h3{
-    line-height: 0;
-  }
-  .contact address{
-    margin-top: 40px;
-  }
-  .social-icons i {
-    margin-top: 5px;
-  }
+      padding: 0px 30px 85px 0px;
+    } 
+    .map {
+      width: 100%;
+      padding-bottom: 52%; 
+    }
+
+    .faq article {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0px 30px 30px 0px;
+    }
+    
+    /*-------Pages Footer Section-----------------------*/
+    footer {
+      padding-top: 100px;
+      align-items: flex-start;
+      flex-flow: row wrap;
+      height: 300px;
+    }
+    footer h3{
+      line-height: 0;
+    }
+    .contact, .social{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 30px 30px 100px 30px; 
+    }
+    .contact address{
+      margin-top: 40px;
+    }
+    .social-icons h3{
+      padding-top: 0px;
+    }
+    .social-icons i {
+      margin-top: 5px;
+    }
 }
   /*========================Desktop Styles ===================*/   
     @media only screen and (min-width: 1200px) {
@@ -561,50 +544,68 @@ input[type=button] {
       margin-left: 50px;
       width: 40%;
       }
-    .form-descr{
-      width: 100%;
+    .hero-area {
+      height: 600px;
     }
     .form-blurb{
+      width: 50%;
       padding: 45px 80px 65px 200px;
     }
     form {
+      width: 50%;
       padding: 45px 200px 65px 80px;
     }
     .feat h2 {
-      width: 90%;
+      width: 70%;
     }
     .feat article {
       width: 33%;
-      box-sizing: border-box;
-      padding: 30px 80px 30px 80px;
-    }
-    .hero-area {
-      display: flex;
-    }
-    .contact-det h2 {
-      display: flex;
-      width: 1200px;
-      justify-content: flex-start;
+      padding: 30px 105px 30px 105px;
     }
    .reviews {
      padding-left: 120px;
      align-items: flex-start;
    }
    .reviews h2 {
-      display: flex;
-      flex: 1 1 100%;
       padding: 100px 0px 100px 60px;
     }
     .reviews article {
-      width: 40%;
-      display: flex;
-      flex-flow: row wrap;
+      width: 38%;
       padding: 0px 60px 100px 20px;
+    }
+     /*-----About Page Styling -------*/
+    .mission h1{
+      width: 65%;
+    }
+    .contact-det h2, .faq h2{
+      width: 100%;
+    }
+    .mission article {
+      padding: 60px 120px 10px 130px;
+    } 
+    .faq {
+      padding: 60px 140px 90px 130px;
+    } 
+    .contact-det {
+      padding: 60px 400px 10px 130px;
+    } 
+    .mission p {
+      padding: 0px 170px 85px 0px;
+    } 
+    .contact-det article {
+      width: 50%;
       box-sizing: border-box;
-    }
+      padding: 0px 30px 85px 0px;
+    } 
+    .faq article {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0px 120px 0px 0px;
+    } 
     .map figure {
-      padding-bottom: 38%; 
+      padding-bottom: 37.5%; 
     }
+    /*---------Footer------------------*/
     footer {
       padding-top: 100px;
     }
