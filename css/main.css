@@ -90,6 +90,8 @@ textarea {
    html {
       font-size: 16px;
    }
+
+  /*  *{ border: 1px solid red; } */
    body {
       font-family: 'Open Sans', sans-serif;
       color: #e2e3ed;
@@ -234,8 +236,8 @@ textarea {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 500px;
-      width: 100%;
+      min-height: 500px;
+     /* width: 100%; */
 
     }
     /*----------------Camp Features Area and Background Image and Styling -------------*/
@@ -513,7 +515,6 @@ input[type=button] {
       padding-top: 100px;
       align-items: flex-start;
       flex-flow: row wrap;
-      height: 300px;
     }
     footer h3{
       line-height: 0;
@@ -545,7 +546,7 @@ input[type=button] {
       width: 40%;
       }
     .hero-area {
-      height: 600px;
+      min-height: 600px;
     }
     .form-blurb{
       width: 50%;
