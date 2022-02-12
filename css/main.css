@@ -89,6 +89,7 @@ textarea {
    /*  ---------Global Stylings ------------*/ 
    html {
       font-size: 16px;
+      background-color: #1F2321 ;
    }
 
   /*  *{ border: 1px solid red; } */
@@ -489,6 +490,9 @@ input[type=button] {
     .faq {
       padding: 60px 60px 90px 70px;
     }
+    .faq h2{
+      width: 100%;
+    }
     .mission p {
       width: 50%;
       box-sizing: border-box;
@@ -578,7 +582,7 @@ input[type=button] {
     .mission h1{
       width: 65%;
     }
-    .contact-det h2, .faq h2{
+    .contact-det h2 {
       width: 100%;
     }
     .mission article {
