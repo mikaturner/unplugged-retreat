@@ -11,686 +11,800 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   mobile first custom styles
-   ========================================================================== */
-   /*  ---------Global Stylings ------------*/ 
    html {
-      font-size: 16px;
-      background-color: #1F2321 ;
-   }
-
-  /*  *{ border: 1px solid red; } */
-   body {
-      font-family: 'Open Sans', sans-serif;
-      color: #e2e3ed;
-      font-size: 1em;
-    } 
-    a{
-      color: #e2e3ed;
-      font-style: bold;
-      text-decoration: none;
-    }
-    a, h3 {
-      font-size: 1.125em;
-    }
-    h1, h2, h3, h4 {
-      font-family: 'Poppins', sans-serif;
-    }
-    h1 {
-      font-size: 2.25em;
-    }
-    h2{
-      font-size: 1.875em;
-    }
-    h3{
-      line-height: 1.25em;
-    }
-    p{
-      font-size: 0.875em;
-      line-height: 1.125em;
-    }
-    /*----------- Icon Styling ---------------*/
-    .f-awe-icon i {
-	    font-size: 3.75em;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .social-icons i {
-      font-size: 1.125em;
-      line-height: 2.5em;
-    }
-    .social-icons i {
-      background-color: #517157;
-      border-radius: 100%;
-      width: 2.5em;
-      height: 2.5em;
-    }
-    /*---------- Embedded Image Styling -------------*/
-    img {
-      width: 89%;
-    }
-    /*-----------Iframe Map Styling and CSS to make responsive------------*/
-    .map {
-      width: 100%;
-      height: 0; 
-      padding-bottom: 125%; 
-      overflow: hidden;
-      position: relative;
-    }
-    .map iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-    }
-    /*--------------Header Styling, with some footer styling, more footer styling lower in document --------*/
-   header, footer{
-      display: flex;
-      flex-direction: column;
-      background-color:#1F2321 ;
-    }
-    header{
-      padding-top: 10px;
-    }
-    header a{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .unplug-img {
-      width: 70%;
-      display: flex;
-      padding-top: 20px;
-    }
-    header nav li {
-      list-style: none;
-      display: inline-flex;
-    }
-    header nav ul{
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 100px;
-    }
-    header nav a {
-      text-decoration: none;
-    }
-    /*--------------Main Area Styling --------------------------*/
-    main{
-      display: flex;
-      flex-direction: column;
-     }
-     .hero-area h1 {
-       padding-left: 20px;
-     } 
-     /*-------------Itinerary Area-------------------------*/
-     .form-blurb {
-       margin: 0 20px;
-     } 
-     aside{
-       background-color: #527057;
-     }
-     .reviews, .contact-det{
-       background-color: #294139;
-     }
-     /*-----------Homepage Review Area Styling------------*/
-     .reviews {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-      padding-bottom: 45px;
-    }
-    .reviews article, .reviews h2 {
-      width: 89%;
-    }
-     .mission, .faq{
-       background-color: #517157;
-     }
-     /*--------About-Page Mission and Contact Detail Area, and FAQ Page Styling-------------*/
-     .mission article, .contact-det, .faq {
-       padding: 20px 20px 45px 20px; 
-     }
-     /*---address styling, affects <address> elements in footer and in .contact-det section of About page---*/
-    address {
-      font-style: normal;
-      line-height: 0em;
-    }
-    /*-----------------Homepage Hero Area Background Image and Styling --------------*/
-    .hero-area{
-      background: url('../img/jake-melara-30679-unsplash.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      min-height: 500px;
-     /* width: 100%; */
-
-    }
-    /*----------------Camp Features Area and Background Image and Styling -------------*/
-    .feat {
-      background: url('../img/rawpixel-800820-unsplash1.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0px 20px 70px 20px;
-    }
-
-    .feat article {
-      width: 46%;
-      box-sizing: border-box;
-      padding: 30px 0px 10px 0px;
-    }
-
-    .feat h2 {
-      padding-top: 45px;
-    }
-
-    .feat-item-descr {
-      text-align: center;
-    }
-/*------Footer Styling, footer background color is set in header section since they share the same color-------*/
-  footer {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 30px;
-}
-.social-icons p{
-  display: inline-flex;
-  padding: 0px 20px;
-} 
-.social-icons h3{
-  padding-top: 40px;
-  line-height: 0px;
-}
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
   
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-/*=================Homepage Intineray Form==============================================*/
- form{
-  margin: 30px 20px 30px 20px; 
-}
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-/* ==========================================================================
-   Media Queries for Tablet and Desktop
-   ========================================================================== */
-
-   @media only screen and (min-width: 768px) {
-    /*-------Tablet styles here*--------------------------------------------------*/
-    /*-----------------Header area------------------*/
-    header{
-      flex-direction: row;
-      padding: 10px;
-    }
-    header a{
-      justify-content: flex-start;
-      padding-left: 60px;
-    }
-    .unplug-img {
-      width: 60%;
-      padding-top: 0px;
-    }
-    header nav ul {
-      padding: 0px 60px 0px 40px;
-    }
-    /*-------------Main area-----------------------------------------------------------*/
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
   
-     /*-----------------Hero Area--------------------*/
-    .hero-area {
-      padding-left: 60px;
-    }
-    /*--Set a percentage so text-wrap matches mockup --*/
-    .hero-area h1 {
-      width: 68%;
-    }
-    /*------Itinerary Area------------------------*/
-     form{
-       margin-top: 0px;
-       width: 47%;
-       box-sizing: border-box;
-       padding: 30px 60px 30px 30px;
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     mobile first custom styles
+     ========================================================================== */
+     /*  ---------Global Stylings ------------*/ 
+     html {
+        font-size: 16px;
+        background-color: #1F2321 ;
      }
-    .form-descr{
-      display: flex;
-    } 
-    .form-blurb {
-      width: 47%;
-      box-sizing: border-box;
-      padding: 30px 30px 30px 60px;
-      margin: 0 0px;
+
+     body {
+        font-family: 'Open Sans', sans-serif;
+        color: #e2e3ed;
+        font-size: 1em;
       }
-     /*--------Camp Features Area----------------*/ 
-    .feat{
-      flex-flow: row wrap;
-      padding: 100px 50px;
-    }
-    .feat article {
-      width: 50%;
-      padding: 30px 100px 30px 100px;
-    }
-    .feat h2 {
-      padding-top: 0px;
-    }
-    /*----------Reviews Section -------------------*/
-    .reviews {
-      justify-content: flex-start;
-    }
-    .reviews h2{
-      padding: 100px 0px 10px 60px;
-      line-height: 0;
-    }
-    .reviews img {
-      width: 50%;
-      padding: 0px 30px 100px 60px;
-      box-sizing: border-box;
-    }
-    .reviews article {
-      width: 50%;
-      padding: 0px 60px 145px 0px;
-      box-sizing: border-box;
-    }
-    .reviews h3 {
-      margin-top: 0px;
-    }
-    /*--------- Start Checking HERE  About Page and Faq Page main sections-------------*/
-    
-    .mission h1{
-      width: 95%;
-    }
-    .contact-det h2{
-      width: 75%;
-    }
-    .mission article, .contact-det, .faq {
-      display: flex;
-      justify-content: flex-start;
-      flex-flow: row wrap;
-    } 
-    .mission article, .contact-det{
-      padding: 60px 60px 10px 70px;
-    }
-    .faq {
-      padding: 60px 60px 90px 70px;
-    }
-    .faq h2{
-      width: 100%;
-    }
-    .mission p {
-      width: 50%;
-      box-sizing: border-box;
-      padding: 0px 60px 85px 0px;
-    } 
-    .contact-det article {
-      width: 50%;
-      box-sizing: border-box;
-      padding: 0px 30px 85px 0px;
-    } 
-    .map {
-      width: 100%;
-      padding-bottom: 52%; 
-    }
 
-    .faq article {
-      width: 50%;
-      box-sizing: border-box;
-      padding: 0px 30px 30px 0px;
-    }
-    
-    /*-------Pages Footer Section-----------------------*/
+      a{
+        color: #e2e3ed;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      a, h3 {
+        font-size: 1.125em;
+      }
+
+      h1, h2, h3, h4 {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      h1 {
+        font-size: 2.25em;
+        font-weight: lighter;
+      }
+
+      h2{
+        font-size: 1.875em;
+        font-weight: lighter;
+      }
+
+      h3{
+        line-height: 1.25em;
+        font-weight: lighter;
+      }
+
+      p{
+        font-size: 0.875em;
+        line-height: 1.125em;
+      }
+      /*----------- Icon Styling ---------------*/
+      .f-awe-icon i {
+        font-size: 4.2em;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .social-icons i {
+        font-size: 1.125em;
+        line-height: 2.5em;
+      }
+
+      .social-icons i {
+        background-color: #517157;
+        border-radius: 100%;
+        width: 2.5em;
+        height: 2.5em;
+      }
+
+      /*---------- Embedded Image Styling -------------*/
+      img {
+        width: 89%;
+      }
+
+      /*-----------Iframe Map Styling and CSS to make responsive------------*/
+      .map {
+        width: 100%;
+        height: 0; 
+        padding-bottom: 125%; 
+        overflow: hidden;
+        position: relative;
+      }
+
+      .map iframe {
+          width: 100%;
+          height: 100%;
+          position: absolute; 
+          top: 0; 
+          left: 0; 
+      }
+
+      /*--------------Header Styling, with some footer styling, more footer styling lower in document --------*/
+     header, footer{
+        display: flex;
+        flex-direction: column;
+        background-color:#1F2321 ;
+      }
+
+      header{
+        padding-top: 10px;
+      }
+
+      header a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header-divider {
+        background: #3a3a3a; 
+        height: 1px;
+        width: 100%;
+       margin-top: 10px;
+      }
+
+      .unplug-img {
+        width: 60%;
+        display: flex;
+      }
+
+      header nav li {
+        list-style: none;
+        display: inline-flex;
+      }
+
+      header nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 100px;
+      }
+
+      header nav a {
+        text-decoration: none;
+      }
+
+      /*--------------Main Area Styling --------------------------*/
+      main{
+        display: flex;
+        flex-direction: column;
+      }
+
+       .hero-area h1 {
+         padding-left: 20px;
+      }
+
+       /*-------------Itinerary Area-------------------------*/
+       .form-blurb {
+         margin: 0 20px;
+       } 
+       aside{
+         background-color: #527057;
+       }
+       .reviews, .contact-det{
+         background-color: #294139;
+       }
+       /*-----------Homepage Review Area Styling------------*/
+       .reviews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 45px;
+      }
+      .reviews article, .reviews h2 {
+        width: 87%;
+      }
+       .mission, .faq{
+         background-color: #517157;
+       }
+       /*--------About-Page Mission and Contact Detail Area, and FAQ Page Styling-------------*/
+       .mission article, .contact-det, .faq {
+         padding: 20px 20px 45px 20px; 
+       }
+       /*---address styling, affects <address> elements in footer and in .contact-det section of About page---*/
+      address {
+        font-style: normal;
+        line-height: 0em;
+      }
+      /*-----------------Homepage Hero Area Background Image and Styling --------------*/
+      .hero-area{
+        background: url('../img/jake-melara-30679-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 622px;
+      }
+      /*----------------Camp Features Area and Background Image and Styling -------------*/
+      .feat {
+        background: url('../img/rawpixel-800820-unsplash1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 70px 20px;
+      }
+  
+      .feat article {
+        width: 64%;
+        box-sizing: border-box;
+        padding: 30px 0px 10px 0px;
+      }
+  
+      .feat h2 {
+        padding-top: 45px;
+      }
+  
+      .feat-item-descr {
+        text-align: center;
+      }
+  /*------Footer Styling, footer background color is set in header section since they share the same color-------*/
     footer {
-      padding-top: 100px;
-      align-items: flex-start;
-      flex-flow: row wrap;
-    }
-    footer h3{
-      line-height: 0;
-    }
-    .contact, .social{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 30px;
+  }
+  .social-icons p{
+    display: inline-flex;
+    padding: 0px 20px;
+  } 
+  .social-icons h3{
+    padding-top: 40px;
+    line-height: 0px;
+    margin-bottom: 40px;
+  }
+    
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  /*=================Homepage Intineray Form==============================================*/
+   form{
+    margin: 30px 20px 30px 20px; 
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* ==========================================================================
+     Media Queries for Tablet and Desktop
+     ========================================================================== */
+  
+     @media only screen and (min-width: 768px) {
+      /*-------Tablet styles here*--------------------------------------------------*/
+      /*-----------------Header area------------------*/
+      header{
+        flex-direction: row;
+        padding: 10px;
+      }
+
+      header a{
+        justify-content: flex-start;
+        padding-left: 60px;
+      }
+
+      .header-divider {
+        background: #3a3a3a; 
+        height: 0px;
+        width: 0%;
+        margin-top: 0px;
+      }
+
+      .unplug-img {
+        width: 60%;
+        padding-top: 0px;
+      }
+
+      header nav ul {
+        padding: 0px 60px 0px 40px;
+      }
+
+      h2{
+        font-size: 2.25em;
+        line-height: 1.333;
+      }
+      
+      h3{
+        font-size: 1.5em;
+        line-height: 1.25;
+      }
+
+      .f-awe-icon i {
+        font-size: 5.2em;
+      }
+      /*-------------Main area-----------------------------------------------------------*/
+    
+       /*-----------------Hero Area--------------------*/
+      .hero-area {
+        padding-left: 60px;
+      }
+      /*--Set a percentage so text-wrap matches mockup --*/
+      .hero-area h1 {
+        font-size: 3em;
+        line-height: 1;
+        margin-top: 50px;
+        padding-left: 5px;
+        padding-right: 20px;
+      }
+      
+      .hero-area{
+        background-size: cover;
+        min-height: 700px;
+      }
+      /*------Itinerary Area------------------------*/
+       form{
+         margin-top: 0px;
+         width: 47%;
+         box-sizing: border-box;
+         padding: 30px 60px 30px 30px;
+       }
+      .form-descr{
+        display: flex;
+      } 
+      .form-blurb {
+        width: 47%;
+        box-sizing: border-box;
+        padding: 30px 30px 30px 60px;
+        margin: 0 0px;
+      }
+       /*--------Camp Features Area----------------*/ 
+      .feat{
+        flex-flow: row wrap;
+        padding: 80px 50px;
+      }
+      .feat article {
+        width: 50%;
+        padding: 30px 100px 30px 100px;
+      }
+      .feat h2 {
+        padding-top: 0px;
+      }
+      /*----------Reviews Section -------------------*/
+      .reviews {
+        align-items: flex-start;
+        padding-bottom: 0px;
+      }
+      .reviews h2{
+        padding: 60px 200px 0px 60px;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+      .reviews img {
+        width: 50%;
+        padding: 0px 15px 0px 60px;
+        box-sizing: border-box;
+      }
+      .reviews article {
+        width: 50%;
+        padding: 0px 60px 145px 0px;
+        box-sizing: border-box;
+      }
+      .reviews h3 {
+        margin-top: 0px;
+      }
+      /*--------- Start Checking HERE  About Page and Faq Page main sections-------------*/
+      
+      .mission h1{
+        width: 95%;
+      }
+      .contact-det h2{
+        width: 75%;
+      }
+      .mission article, .contact-det, .faq {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+      } 
+      .mission article, .contact-det{
+        padding: 60px 60px 10px 70px;
+      }
+      .faq {
+        padding: 60px 60px 90px 70px;
+      }
+      .faq h2{
+        width: 100%;
+      }
+      .mission p {
         width: 50%;
         box-sizing: border-box;
-        padding: 30px 30px 100px 30px; 
-    }
-    .contact address{
-      margin-top: 40px;
-    }
-    .social-icons h3{
-      padding-top: 0px;
-    }
-    .social-icons i {
-      margin-top: 5px;
-    }
-}
-  /*========================Desktop Styles ===================*/   
-    @media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
-    header a{
-      padding-left: 120px;
-    }
-    .hero-area h1 {
-      margin-top: 45px;
-      margin-left: 50px;
-      width: 40%;
+        padding: 0px 60px 85px 0px;
+      } 
+      .contact-det article {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0px 30px 85px 0px;
+      } 
+      .map {
+        width: 100%;
+        padding-bottom: 52%; 
       }
-    .hero-area {
-      min-height: 600px;
+  
+      .faq article {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0px 30px 30px 0px;
+      }
+      
+      /*-------Pages Footer Section-----------------------*/
+      footer {
+        padding-top: 60px;
+        align-items: flex-start;
+        flex-flow: row wrap;
+      }
+
+      footer h3{
+        line-height: 0;
+      }
+
+      footer p{
+        font-weight: normal;
+        margin-top: 0;
+      }
+
+      .contact, .social{
+          width: 50%;
+          box-sizing: border-box;
+          padding: 30px 30px 60px 30px; 
+      }
+
+      .contact address{
+        margin-top: 40px;
+      }
+
+      .social-icons h3{
+        padding-top: 0px;
+      }
+
+      .social-icons i {
+        margin-top: 5px;
+      }
+  }
+    /*========================Desktop Styles ===================*/   
+      @media only screen and (min-width: 1200px) {
+      /*Desktop styles here*/
+      header a{
+        padding-left: 120px;
+      }
+      p {
+        font-size: 1.125em;
+        line-height: 1.333;
+      }
+
+      h3{
+        font-size: 1.875em;
+        margin: 10px 0px;
+      }
+
+      .hero-area h1 {
+      font-size: 3.75em;
+      margin-top: 45px;
+      margin-left: 60px;
+      width: 60%;
+      }
+
+      .hero-area {
+        min-height: 600px;
+      }
+
+      .form-blurb{
+        width: 50%;
+        padding: 45px 60px 65px 200px;
+      }
+
+      form {
+        width: 50%;
+        padding: 45px 200px 65px 60px;
+      }
+
+      .form-blurb p {
+        font-size: 1.125em;
+        margin: 0;
+      }
+
+      .feat h2 {
+        width: 80%;
+      }
+
+      .feat article {
+        width: 33%;
+        padding: 30px 60px 30px 105px;
+      }
+
+     .reviews {
+       padding-left: 120px;
+       align-items: flex-start;
+      }
+
+     .reviews h2 {
+        padding: 80px 0px 80px 60px;
+      }
+
+      .reviews article {
+        width: 38%;
+        padding: 0px 60px 100px 20px;
+      }
+
+      .reviews img {
+        width: 50%;
+        padding: 0px 15px 0px 0px;
+        box-sizing: border-box;
+      }
+
+       /*-----About Page Styling -------*/
+      .mission h1{
+        width: 65%;
+      }
+
+      .contact-det h2 {
+        width: 100%;
+      }
+
+      .mission article {
+        padding: 60px 120px 10px 130px;
+      }
+
+      .faq {
+        padding: 60px 140px 90px 130px;
+      }
+
+      .contact-det {
+        padding: 60px 400px 10px 130px;
+      }
+
+      .mission p {
+        padding: 0px 170px 85px 0px;
+      }
+
+      .contact-det article {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0px 30px 85px 0px;
+      }
+
+      .faq article {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0px 120px 0px 0px;
+      }
+
+      .map figure {
+        padding-bottom: 37.5%; 
+      }
+
+      /*---------Footer------------------*/
+      footer {
+        padding-top: 100px;
+      }
+
+      .contact, .social {
+        padding-bottom: 100px;
+      }
     }
-    .form-blurb{
-      width: 50%;
-      padding: 45px 80px 65px 200px;
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
     }
-    form {
-      width: 50%;
-      padding: 45px 200px 65px 80px;
+  
+    a,
+    a:visited {
+      text-decoration: underline;
     }
-    .feat h2 {
-      width: 70%;
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
     }
-    .feat article {
-      width: 33%;
-      padding: 30px 105px 30px 105px;
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
     }
-   .reviews {
-     padding-left: 120px;
-     align-items: flex-start;
-   }
-   .reviews h2 {
-      padding: 100px 0px 100px 60px;
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
     }
-    .reviews article {
-      width: 38%;
-      padding: 0px 60px 100px 20px;
+  
+    pre {
+      white-space: pre-wrap !important;
     }
-     /*-----About Page Styling -------*/
-    .mission h1{
-      width: 65%;
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
     }
-    .contact-det h2 {
-      width: 100%;
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
     }
-    .mission article {
-      padding: 60px 120px 10px 130px;
-    } 
-    .faq {
-      padding: 60px 140px 90px 130px;
-    } 
-    .contact-det {
-      padding: 60px 400px 10px 130px;
-    } 
-    .mission p {
-      padding: 0px 170px 85px 0px;
-    } 
-    .contact-det article {
-      width: 50%;
-      box-sizing: border-box;
-      padding: 0px 30px 85px 0px;
-    } 
-    .faq article {
-      width: 50%;
-      box-sizing: border-box;
-      padding: 0px 120px 0px 0px;
-    } 
-    .map figure {
-      padding-bottom: 37.5%; 
+  
+    tr,
+    img {
+      page-break-inside: avoid;
     }
-    /*---------Footer------------------*/
-    footer {
-      padding-top: 100px;
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
     }
-    .contact, .social {
-      padding-bottom: 100px;
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
     }
   }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
