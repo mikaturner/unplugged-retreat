@@ -263,11 +263,11 @@
       }
       /*-----------------Homepage Hero Area Background Image and Styling --------------*/
       .hero-area{
-        background: url('../img/jake-melara-30679-unsplash.jpg');
+        background: url('../img/jake-mel-mobile-unsplash.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 622px;
+        min-height: 500px;
       }
       /*----------------Camp Features Area and Background Image and Styling -------------*/
       .feat {
@@ -481,6 +481,7 @@
       }
       
       .hero-area{
+        background: url('../img/jake-melara-30679-unsplash.jpg');
         background-size: cover;
         min-height: 700px;
       }
