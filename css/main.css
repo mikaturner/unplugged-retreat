@@ -120,6 +120,7 @@
       h2{
         font-size: 1.875em;
         font-weight: lighter;
+        line-height: 1em;
       }
 
       h3{
@@ -129,7 +130,8 @@
 
       p{
         font-size: 0.875em;
-        line-height: 1.125em;
+        line-height: 1.25em;
+        font-weight: normal;
       }
       /*----------- Icon Styling ---------------*/
       .f-awe-icon i {
@@ -254,7 +256,10 @@
        }
        /*--------About-Page Mission and Contact Detail Area, and FAQ Page Styling-------------*/
        .mission article, .contact-det, .faq {
-         padding: 20px 20px 45px 20px; 
+         padding: 20px 20px 35px 20px; 
+       }
+       .mission h2 {
+         line-height: 1.2em;
        }
        /*---address styling, affects <address> elements in footer and in .contact-det section of About page---*/
       address {
@@ -310,6 +315,9 @@
     padding-top: 40px;
     line-height: 0px;
     margin-bottom: 40px;
+  }
+  .contact p{
+    line-height: 0px;
   }
     
   /* ==========================================================================
@@ -536,37 +544,52 @@
       .reviews h3 {
         margin-top: 0px;
       }
-      /*--------- Start Checking HERE  About Page and Faq Page main sections-------------*/
+      /*---------About Page and Faq Page main sections-------------*/
       
-      .mission h1{
+      .mission h2{
         width: 95%;
+        margin-top: 20px;
       }
       .contact-det h2{
-        width: 75%;
+        width: 80%;
+      }
+      .contact p{
+        line-height: .7em;
       }
       .mission article, .contact-det, .faq {
         display: flex;
         justify-content: flex-start;
         flex-flow: row wrap;
       } 
-      .mission article, .contact-det{
+      .contact-det{
         padding: 60px 60px 10px 70px;
       }
+
+      .contact-det h3{
+        margin-bottom: 15px;
+      }
+      .mission article {
+        padding: 60px 30px 10px 70px;
+      }
       .faq {
-        padding: 60px 60px 90px 70px;
+        padding: 60px 0px 70px 70px;
       }
       .faq h2{
         width: 100%;
       }
+      .faq h3{
+        font-size: 0.9em;
+        margin-top: 0;
+      }
       .mission p {
         width: 50%;
         box-sizing: border-box;
-        padding: 0px 60px 85px 0px;
+        padding: 0px 30px 65px 0px;
       } 
       .contact-det article {
         width: 50%;
         box-sizing: border-box;
-        padding: 0px 30px 85px 0px;
+        padding: 0px 30px 75px 0px;
       } 
       .map {
         width: 100%;
@@ -576,7 +599,7 @@
       .faq article {
         width: 50%;
         box-sizing: border-box;
-        padding: 0px 30px 30px 0px;
+        padding: 0px 50px 30px 0px;
       }
       
       /*-------Pages Footer Section-----------------------*/
@@ -618,6 +641,9 @@
       /*Desktop styles here*/
       header a{
         padding-left: 120px;
+      }
+      .unplug-img{
+        width: 45%;
       }
       p {
         font-size: 1.125em;
@@ -684,41 +710,51 @@
         box-sizing: border-box;
       }
 
-       /*-----About Page Styling -------*/
-      .mission h1{
-        width: 65%;
-      }
-
-      .contact-det h2 {
-        width: 100%;
+       /*-----About & FAQ Page Styling -------*/
+      .mission h2, .contact-det h2{
+        width: 90%;
+        font-size: 3em;
       }
 
       .mission article {
-        padding: 60px 120px 10px 130px;
-      }
-
-      .faq {
-        padding: 60px 140px 90px 130px;
-      }
-
-      .contact-det {
-        padding: 60px 400px 10px 130px;
+        padding: 60px 0px 10px 130px;
       }
 
       .mission p {
-        padding: 0px 170px 85px 0px;
+        padding: 0px 80px 85px 0px;
       }
 
+      .faq {
+        padding: 60px 0px 90px 130px;
+      }
+
+      .faq h2{
+        font-size: 3em;
+      }
+
+      .faq h3{
+        font-size: 1.125em;
+        line-height: 1;
+      }
+
+      .contact-det {
+        padding: 60px 0px 10px 130px;
+      }
+
+      /*.contact-det h2 {
+        width: 100%;
+      } */
+      
       .contact-det article {
         width: 50%;
         box-sizing: border-box;
-        padding: 0px 30px 85px 0px;
+        padding: 0px 0px 85px 0px;
       }
 
       .faq article {
         width: 50%;
         box-sizing: border-box;
-        padding: 0px 120px 0px 0px;
+        padding: 0px 60px 20px 0px;
       }
 
       .map figure {
